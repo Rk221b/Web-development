@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vacation Planner</title>
+    <link rel="stylesheet" href="design.css" />
+    </head>
+  <body>
+    <header >
+        
+     <h1 id="greeting">Welcome to the New Zealand Vacation Planner</h1>
+     
+      </header>
+      
+      <section>
+        <h2>Trip Timing</h2>
+          <p id="timingerror" class="error"></p>
+          <label for="days">How Many Days Will You Be Travelling  </label>
+          <input id="days" type="text" placeholder="Enter a number">
+          <button id="enterdays">Enter</button>
+          
+                    <p id="daysmessage"></p>
+                    <p id="hoursmessage"></p>
+                    <p id="minmessage"></p>
+                    <p id="secmessage"></p>
+                  
+                <button hidden class="next" id="timingnext">Next</button>
+          
+      </section>
+      
+      <section id="budgetsection" hidden>
+          <h2>Budget</h2>
+          <p>The currency in New Zealand is the <strong>New Zealand Dollar (NZD)</strong></p>
+             <p>Exchange rate: 1 Rs = 0.021 NZD</p>
+          <p id="budgeterror" class="error"></p>
+          <label for="dailybudget">Enter your total trip budget in Rs:</label>
+          <input id="tripbudget" type="text" placeholder="Enter your amount">
+          <input type="button" value="Enter" id="enterbudget">
+          
+          <p id="tripExchangeMsg"></p>
+             <p id="dailyExchangeMsg"></p>
+             <p id="exchange10Msg"></p>
+             <p id="exchange500Msg"></p>
+             <button hidden id="budgetNext" class="next">next</button>
+          
+      </section>
+      <script src="script.js"></script>
+    
+    
+    </body>
+
+
+</html>
